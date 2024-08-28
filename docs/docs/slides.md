@@ -31,28 +31,20 @@ A few types of messages available to help with prompt engineering:
 ## 1.5 Advisor
 
 ## 1.6 Function Calling
+![FunctionCalling.png](FunctionCalling.png)
 
 # 2.0 RAG (Retrieval Augmented Generation)
 
 ## 2.1 Embedding
-![img.png](img.png)
+![2d vector embeddings.png](2d%20vector%20embeddings.png)
+![embedding.png](embedding.png)
 
-## 2.2 Recap
-![RAG.png](RAG.png)
+## 2.2 Prompt Stuffing
 ![RAGSimplified.png](RAGSimplified.png)
-
-
-## 2.2 ETL Pipeline (Extract, Transform, and Load)
-Focuses on preparing the Retrieval Model; Building the vector store.
-
-![ETLPipeline.png](ETLPipeline.png)
+![spring-ai-prompt-stuffing.jpg](spring-ai-prompt-stuffing.jpg)
 
 
 # 3.0 Additional Tools
 - 3.1 Image Generation
 - 3.3 Speech-to-Text
 - 3.4 Text-to-Speech
-
-## 3.4 Function Calling
-
-![FunctionCalling.png](FunctionCalling.png)
