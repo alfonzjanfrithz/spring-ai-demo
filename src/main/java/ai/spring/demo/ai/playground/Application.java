@@ -19,6 +19,8 @@ import org.springframework.core.io.Resource;
 import com.vaadin.flow.component.page.AppShellConfigurator;
 import com.vaadin.flow.theme.Theme;
 
+import java.util.function.Function;
+
 @SpringBootApplication
 @Theme(value = "customer-support-agent")
 public class Application implements AppShellConfigurator {
@@ -56,5 +58,10 @@ public class Application implements AppShellConfigurator {
 	@Bean
 	public ChatMemory chatMemory() {
 		return new InMemoryChatMemory();
+	}
+
+	@Bean
+	public Function<MockWeatherService.Request, MockWeatherService.Response> getCityWeather() {
+		return new MockWeatherService();
 	}
 }
