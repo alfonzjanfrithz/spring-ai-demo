@@ -42,7 +42,7 @@ public class Application implements AppShellConfigurator {
 					new TokenTextSplitter().transform(
 							new TextReader(termsOfServiceDocs).read()));
 
-			vectorStore.similaritySearch("Cancelling Bookings").forEach(doc -> {
+			vectorStore.similaritySearch("Bookings").forEach(doc -> {
 				logger.info("Similar Document: {}", doc.getContent());
 			});
 		};

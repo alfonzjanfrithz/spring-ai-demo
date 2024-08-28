@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import {AssistantService, BookingService} from "Frontend/generated/endpoints";
+import {AssistantService, BookingService} from "../generated/endpoints";
 import BookingDetails from "../generated/ai/spring/demo/ai/playground/services/BookingTools/BookingDetails";
 import {GridColumn} from "@vaadin/react-components/GridColumn";
 import {Grid} from "@vaadin/react-components/Grid";
@@ -7,7 +7,7 @@ import {MessageInput} from "@vaadin/react-components/MessageInput";
 import {nanoid} from "nanoid";
 import {SplitLayout} from "@vaadin/react-components/SplitLayout";
 import Message, {MessageItem} from "../components/Message";
-import MessageList from "Frontend/components/MessageList";
+import MessageList from "../components/MessageList";
 
 export default function Index() {
   const [chatId, setChatId] = useState(nanoid());
